@@ -5,7 +5,7 @@ body{
 }
 .login-container {
     border: 1px dotted darkblue;
-    margin-top: 25px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     background-image: url(https://images6.alphacoders.com/760/thumb-1920-760772.jpg);
@@ -37,31 +37,21 @@ body{
     justify-content: center;
 }
 
-.grid-cont {
-    border: 1px dotted red;
-    margin: 3px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap:5px ;
+/**/
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    background-color: rgba(170, 169, 169, 0.878);
+    color: white;
 }
-.grid-cell {
-    border: 1px solid blue;
+.f-sec {
+    padding-left: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.s-sec:hover {
+    background-color: white;
+}
 
 
 
@@ -72,7 +62,7 @@ body{
 footer {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(87, 87, 87);
+    background-color: rgba(36, 34, 34, 0.878);
     color: white;
     padding: 25px;
     letter-spacing: 3px;
