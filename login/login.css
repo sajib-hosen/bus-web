@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+.login-container {
+    border: 1px dotted darkblue;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images6.alphacoders.com/760/thumb-1920-760772.jpg);
+    padding: 120px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-form {
+    border: 2px solid black;
+    border-radius: 5px;
+    color: lightyellow;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(126, 125, 125, 0.398);
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.419);
+}
+.login-form input, button {
+    margin: 10px;
+}
+.login-form img {
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+article {
+    margin: 15px;
+    border: 1px dotted red;
+}
+
+
+/*FOOTER DESIGNE*/
+footer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(87, 87, 87);
+    color: white;
+    padding: 25px;
+    letter-spacing: 3px;
+    font-size: 11px;
+}
