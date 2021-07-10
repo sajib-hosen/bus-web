@@ -1,0 +1,17 @@
+
+nav ul {
+    display: flex;
+}
+nav li {
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+}
+.dropdown {
+    display: none;
+}
+nav > ul > li:hover > ul {
+    display: block;
+    position: absolute;
+}

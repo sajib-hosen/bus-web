@@ -1,9 +1,7 @@
-* {
-    border: 1px dotted rgb(0, 0, 0);
-    margin: 0;
-}
+
 body {
     background-color: #d4d3d3;
+    margin: 0;
 }
 /*BACKGROUND DESIGNE*/
 .bg-img {
@@ -13,7 +11,7 @@ body {
     font-family: 'Source Code Pro', monospace;
     font-variant: small-caps;
     color: white;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,17 +19,53 @@ body {
     text-transform: capitalize;
     text-shadow: 10px 10px 10px black;
 }
-/*NaVIGATION DESIGN*/
-nav ul {
+
+
+
+/*NAVIGATION DESIGN*/
+nav {
+    padding: 0;
+    margin: 0;
+}
+nav > ul {
     display: flex;
     background-color: rgb(87, 87, 87);
     box-shadow: 10px 20px 10px black;
     overflow: hidden;
-    padding: 0; /**/
+    padding: 0px; /**/
 }
 nav li {
     list-style-type: none;
+    padding: 0px;
 }
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block; /**/
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: rgb(26, 25, 25);
+}
+.d-down {
+    display: none;
+}
+nav > ul > li:hover > ul {
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(87, 87, 87);
+}
+
+
+
+
+/*LOGIN LOGO*/
+
 #login {
     border-radius: 50%;
     opacity: 0.5;
@@ -40,18 +74,9 @@ nav li {
     right: -630px;
 
 }
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 12px;
-    display: block; /**/
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 3px;
-}
-nav a:hover {
-    background-color: rgb(26, 25, 25);
-}
 /*SECTION DIV DECORATION*/
 .div_flx {
     display: flex;
 }
+
+
