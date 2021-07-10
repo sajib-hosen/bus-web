@@ -17,12 +17,14 @@
         body {
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
+            background-color: rgba(223, 222, 222, 0.74);
         }
         .grid-calender {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             grid-gap: 5px;
-            margin: 5px;
+            margin: auto;
+            max-width: 700px;
         }
         .date {
             border: 1px solid purple;
@@ -31,7 +33,7 @@
             justify-content: center; /*to verticlally center*/
             align-items: center; /*to horaizantally center*/
             font-weight: 900;
-            box-shadow: 5px 5px 5px gray;
+            padding: 15px;
         }
         .fri-day {
             background-color: rgba(206, 184, 184, 0.809);
@@ -39,6 +41,16 @@
         }
         .txt-cen {
             text-align: center;
+        }
+        .other-month {
+            background-color: gray;
+        }
+        .bar {
+            background-color: greenyellow;
+        }
+        .date:hover {
+            background-color: #362e2e;
+            color: white;
         }
 
         footer{
@@ -53,21 +65,26 @@
         }
     </style>
 </head>
+<header>
+    <p>
+        here will be logo of the Web-site
+    </p>
+</header>
 <body>
     <h2 class="txt-cen">calender</h2>
     <h3 class="txt-cen">for the month of June-2021</h3>
 <div class="grid-calender">
-    <div class="date">SUN</div>
-    <div class="date">MON</div>
-    <div class="date">TUE</div>
-    <div class="date">WED</div>
-    <div class="date">THU</div>
-    <div class="date fri-day">FRI</div>
-    <div class="date">SAT</div>
-    <div class="date">27</div>
-    <div class="date">28</div>
-    <div class="date">29</div>
-    <div class="date">30</div>
+    <div class="date bar ">SUN</div>
+    <div class="date bar ">MON</div>
+    <div class="date bar">TUE</div>
+    <div class="date bar ">WED</div>
+    <div class="date bar ">THU</div>
+    <div class="date bar ">FRI</div>
+    <div class="date bar">SAT</div>
+    <div class="date other-month ">27</div>
+    <div class="date other-month ">28</div>
+    <div class="date other-month ">29</div>
+    <div class="date other-month ">30</div>
     <div class="date">1</div>
     <div class="date fri-day">2</div>
     <div class="date">3</div>
@@ -101,6 +118,7 @@
     <div class="date">31</div>
 </div>
  </div>
+
 <br><br>
 <footer>
     @copy right 2021 <br>bus-web.com
