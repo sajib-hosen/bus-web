@@ -36,10 +36,36 @@ body{
     position: relative;
     justify-content: center;
 }
-article {
-    margin: 15px;
+
+.grid-cont {
     border: 1px dotted red;
+    margin: 3px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:5px ;
 }
+.grid-cell {
+    border: 1px solid blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*FOOTER DESIGNE*/
