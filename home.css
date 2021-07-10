@@ -68,16 +68,14 @@ nav > ul > li:hover > ul {
 
 #login {
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 1;
     position: relative;
     top: -75px;
     right: -630px;
 
 }
-/*SECTION DIV DECORATION*/
-.div_flx {
-    display: flex;
-}
+
+
 
 /*FOOTER DESIGNE*/
 footer {
