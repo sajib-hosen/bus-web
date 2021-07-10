@@ -6,7 +6,7 @@ body {
 /*BACKGROUND DESIGNE*/
 .bg-img {
     background-image: url(images/spring-flower.jpg!d);
-    padding: 120px;
+    padding: 100px;
     text-align: center;
     font-family: 'Source Code Pro', monospace;
     font-variant: small-caps;
@@ -79,4 +79,13 @@ nav > ul > li:hover > ul {
     display: flex;
 }
 
-
+/*FOOTER DESIGNE*/
+footer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(87, 87, 87);
+    color: white;
+    padding: 25px;
+    letter-spacing: 3px;
+    font-size: 11px;
+}
