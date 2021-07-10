@@ -4,7 +4,6 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 .login-container {
-    border: 1px dotted darkblue;
     margin-top: 0px;
     display: flex;
     justify-content: center;
@@ -43,18 +42,15 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 35px;
-    background-color: rgba(170, 169, 169, 0.878);
+    background-image: linear-gradient(grey, black);
     color: white;
 }
 .f-sec {
     padding-left: 15px;
 }
-.s-sec:hover {
-    background-color: white;
+.s-sec {
+    padding-right: 15px;
 }
-
-
-
 
 
 
@@ -66,5 +62,5 @@ footer {
     color: white;
     padding: 25px;
     letter-spacing: 3px;
-    font-size: 11px;
+    font-size: 15px;
 }
