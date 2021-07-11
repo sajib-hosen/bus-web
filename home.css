@@ -80,16 +80,6 @@ nav > ul > li:hover > ul {
     background-color: rgba(87, 87, 87, 0.659);
 }
 
-/*FOOTER DESIGNE*/
-footer {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(87, 87, 87);
-    color: white;
-    padding: 25px;
-    letter-spacing: 3px;
-    font-size: 11px;
-}
 
 
 /*FOR TRANSFORMATION*/
@@ -117,3 +107,92 @@ footer {
     width: 350px;
     background-color: blueviolet;
 }
+
+
+
+/* FOR NAYMATION */
+.animation-container {
+    border: 1px dotted blueviolet;
+    margin: 10px;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+}
+.ani-box {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(pink, blue);
+    position: relative;
+    animation: sliding 25s infinite linear  alternate;
+    animation-play-state: running;
+}
+
+@keyframes sliding {
+ 
+    /* from {
+        background-color: deeppink;
+        left: 0px;
+    }
+    to {
+        background-color: greenyellow;
+        left: 450px;
+        bottom: px;
+    } */
+    0% {
+        background-color: deeppink;
+        top: 0px;
+        left: 250px;
+    }
+    11.11% {
+        top: 125px;
+        left: 125px;
+    }
+    22.22% {
+        top: 375px;
+        left: 0px;
+    }
+    33.33% {
+        top: 500px;
+        left: 125px;
+    }
+    44.44% {
+        top: 375px;
+        left: 250px;
+    }
+    50% {
+        top: 250px;
+        left: 375px;
+    }
+    66.66% {
+        top: 125px;
+        left: 500px;
+    }
+    77.77% {
+        top: 0px;
+        left: 0px;
+    }
+    88.88% {
+        top: 500px;
+        left: 0px;
+    }
+    100% {
+        top: 500px;
+        left: 0px;
+    }
+}
+
+
+
+
+/*FOOTER DESIGNE*/
+footer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(87, 87, 87);
+    color: white;
+    padding: 25px;
+    letter-spacing: 3px;
+    font-size: 11px;
+}
+

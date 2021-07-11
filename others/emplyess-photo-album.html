@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business Web-site">
+    <meta name="author" content="Muhammad Sajib">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1803/1803613.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> <!--  for icon -->
+    <script src="https://kit.fontawesome.com/2ecc583568.js" crossorigin="anonymous"></script>
+    <title>photo album</title>
+    <style>
+        body {
+            background-color: slategray;
+        }
+        h2 {
+            text-align: center;
+        }
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-fame {
+            border: 1px dotted red;
+            height: 180px;
+            width: 250px;
+            position: relative;
+            margin: 3px;
+            background-color: skyblue;
+            overflow: hidden;
+        }
+        .photo img {
+            width: 100%;
+            height: auto;
+        }
+        .discription {
+            position: absolute;
+            top: 0;
+            display: none;
+        }
+        .photo-fame:hover .discription {
+            display: block;
+            text-align: justify;
+            background-color: rgba(112, 128, 144, 0.282);
+            height: 100%;
+        }
+        .photo-fame:hover .photo {
+            transform: scale(1.5);
+            transition: transform 2s;
+        }
+
+
+
+
+
+        footer {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(87, 87, 87);
+            color: white;
+            padding: 25px;
+            letter-spacing: 3px;
+            font-size: 11px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>This are the empliyess of the company</h2>
+    <div class="photo-album">
+        <div class="photo-fame">
+            <div class="photo">
+                <img src="https://thumbs.dreamstime.com/z/got-131001114.jpg" alt="sundor akta got">
+            </div>
+            <div class="discription">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem impedit alias est expedita nam tempore distinctio? Laborum fugiat voluptatem amet quas cum rem perferendis voluptate, eaque molestiae ratione explicabo nobis!</p>
+            </div>
+        </div>
+        <div class="photo-fame">
+            <div class="photo">
+                <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWFsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="sundor akta got">
+            </div>
+            <div class="discription">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem impedit alias est expedita nam tempore distinctio? Laborum fugiat voluptatem amet quas cum rem perferendis voluptate, eaque molestiae ratione explicabo nobis!</p>
+            </div>
+        </div>
+        <div class="photo-fame">
+            <div class="photo">
+                <img src="https://thumbs.dreamstime.com/z/got-131001114.jpg" alt="sundor akta got">
+            </div>
+            <div class="discription">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem impedit alias est expedita nam tempore distinctio? Laborum fugiat voluptatem amet quas cum rem perferendis voluptate, eaque molestiae ratione explicabo nobis!</p>
+            </div>
+        </div>
+        <div class="photo-fame">
+            <div class="photo">
+                <img src="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="sundor akta got">
+            </div>
+            <div class="discription">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem impedit alias est expedita nam tempore distinctio? Laborum fugiat voluptatem amet quas cum rem perferendis voluptate, eaque molestiae ratione explicabo nobis!</p>
+            </div>
+        </div>
+        <div class="photo-fame">
+            <div class="photo">
+                <img src="https://thumbs.dreamstime.com/z/got-131001114.jpg" alt="sundor akta got">
+            </div>
+            <div class="discription">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem impedit alias est expedita nam tempore distinctio? Laborum fugiat voluptatem amet quas cum rem perferendis voluptate, eaque molestiae ratione explicabo nobis!</p>
+            </div>
+        </div>
+        <div class="photo-fame">
+            <div class="photo">
+                <img src="https://thumbs.dreamstime.com/z/got-131001114.jpg" alt="sundor akta got">
+            </div>
+            <div class="discription">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem impedit alias est expedita nam tempore distinctio? Laborum fugiat voluptatem amet quas cum rem perferendis voluptate, eaque molestiae ratione explicabo nobis!</p>
+            </div>
+        </div>
+        <div class="photo-fame">
+            <div class="photo">
+                <img src="https://i.ytimg.com/vi/nVLw9KAwGWw/maxresdefault.jpg" alt="sundor akta got">
+            </div>
+            <div class="discription">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem impedit alias est expedita nam tempore distinctio? Laborum fugiat voluptatem amet quas cum rem perferendis voluptate, eaque molestiae ratione explicabo nobis!</p>
+            </div>
+        </div>
+        <div class="photo-fame">
+            <div class="photo">
+                <img src="https://thumbs.dreamstime.com/z/got-131001114.jpg" alt="sundor akta got">
+            </div>
+            <div class="discription">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem impedit alias est expedita nam tempore distinctio? Laborum fugiat voluptatem amet quas cum rem perferendis voluptate, eaque molestiae ratione explicabo nobis!</p>
+            </div>
+        </div>
+        <div class="photo-fame">
+            <div class="photo">
+                <img src="https://thumbs.dreamstime.com/z/got-131001114.jpg" alt="sundor akta got">
+            </div>
+            <div class="discription">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem impedit alias est expedita nam tempore distinctio? Laborum fugiat voluptatem amet quas cum rem perferendis voluptate, eaque molestiae ratione explicabo nobis!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br>
+
+<footer>
+    @copy right 2021 <br>bus-web.com
+</footer>
+</body>
+</html>
