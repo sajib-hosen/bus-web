@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Business Web-site">
+        <meta name="author" content="Muhammad Sajib">
+        <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1803/1803613.png">
+        <link rel="stylesheet" href="creat-invoice.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> <!--  for icon -->
+        <script src="https://kit.fontawesome.com/2ecc583568.js" crossorigin="anonymous"></script>
+        <title>creat invoice</title>
+    </head>
+<body>
+<header>
+
+</header>
+<main class="main-body">
+    <section class=>
+        <h1><i class="fas fa-history"></i> Invoice</h1>
+
+        <!-- whole form container 
+        ---------------------------- -->
+        <form action="">
+         <div class="cuatomer-info">
+            <!-- for customer name and mail only 
+            --------------------------------- -->
+             <div class="customer-name">
+              <p>Cuatomet Name: <input class="input-field" id="c-name" type="text" name="customer-name" method="post" placeholder="Mohammad ......" required> 
+                 Email: <input class="input-field" id="c-mail" type="email" name="email" placeholder="....... @gmail.com"> <label for="send-mail">Send Leter</label><input type="checkbox" name="send-mail" id="mail-customer"></p>
+             </div>
+            <!-- for invoice information 
+            ------------------------- -->
+             <div class="invoice-info">
+                 <div class="billing-address text-down-filed mrg">
+                     <div class="inpur-label"><label for="billing-address">Billing Address</label></div>
+                     <div class="input-field"> <textarea name="biling-address" id="bill-adds" cols="30" rows="7" placeholder="House #10, ...." required></textarea></div>
+                 </div>
+ 
+ 
+                 <div class="others-info flex-wrap">
+                     <div class="payments-terms text-down-filed mrg">
+                         <div class="inpur-label"><label for="payment-termas">Payments Terms</label></div>
+                         <div class="input-field"> <input list="payment-termas" name="payment-termas">
+                             <datalist id="payment-termas">
+                                 <option value="Net-7"></option>
+                                 <option value="Net-10"></option>
+                                 <option value="Net-30"></option>
+                                 <option value="Net-70"></option>
+                                 <option value="Net-90"></option>
+                             </datalist>
+                         </div>
+                     </div>
+                     <div class="invoice-date text-down-filed mrg">
+                         <div class="inpur-label"><label for="invoice-date">Invoice Date</label></div>
+                         <div class="input-field"> <input type="date" name="invoice-date" id="inv-date">
+                         </div>
+                     </div>
+                     <div class="due-date text-down-filed mrg">
+                         <div class="inpur-label"><label for="due-date">Due Date</label></div>
+                         <div class="input-field"> <input type="date" name="due-date" id="due-date">
+                         </div>
+                     </div>                    
+                     <div class="invoice-number text-down-filed mrg">
+                         <div class="inpur-label"><label for="invoice-number">Invoice Number</label></div>
+                         <div class="input-field"><input type="number" name="invoice-number" id="inv-num">
+                         </div>
+                     </div>                    
+                     <div class="payment-methods text-down-filed mrg">
+                         <div class="inpur-label"><label for="payment-methods">Payment Methods</label></div>
+                         <div class="input-field">
+                            <input list="payment-methods" name="payment-termas">
+                            <datalist id="payment-methods">
+                                <option value="L/C at sigth, 90 days draft"></option>
+                                <option value="L/C at sigth, 120 days draft"></option>
+                                <option value="T/T"></option>
+                                <option value="On Cash"></option>
+                                <option value="FDD"></option>
+                            </datalist>
+                         </div>
+                     </div>                    
+                 </div>
+ 
+             </div>
+         </div>
+
+
+         <table>
+             <!-- table heading  -->
+            <tr>
+              <th>Serial No</th>
+              <th>Item</th>
+              <th>Item Description<br><span style="font-size: 11px;">(to be shown on the Invoice)</span></th>
+              <th colspan="2">Prder Quantioty</th>
+              <th>Unit Price</th>
+              <th colspan="2">Bill Quantity</th>
+              <th>Item Value</th>
+            </tr>
+
+            <!-- table data  -->
+            <tr>
+              <td>01</td>
+              <td>Woven Label</td>
+              <td>Woven Label (PO BV008556)</td>
+              <td>5000</td>
+              <td>Pcs</td>
+              <td>0.02</td>
+              <td>5000</td>
+              <td>Pcs</td>
+              <td>100.00</td>
+            </tr>
+
+            <tr>
+                <td>02</td>
+                <td>Woven Label</td>
+                <td>Woven Label (PO BV008556)</td>
+                <td>5000</td>
+                <td>Pcs</td>
+                <td>0.02</td>
+                <td>5000</td>
+                <td>Pcs</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Woven Label</td>
+                <td>Woven Label (PO BV008556)</td>
+                <td>5000</td>
+                <td>Pcs</td>
+                <td>0.02</td>
+                <td>5000</td>
+                <td>Pcs</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <td>04 </td>
+                <td>Woven Label</td>
+                <td>Woven Label (PO BV008556)</td>
+                <td>5000</td>
+                <td>Pcs</td>
+                <td>0.02</td>
+                <td>5000</td>
+                <td>Pcs</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Woven Label</td>
+                <td>Woven Label (PO BV008556)</td>
+                <td>5000</td>
+                <td>Pcs</td>
+                <td>0.02</td>
+                <td>5000</td>
+                <td>Pcs</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- for total value  -->
+            <tr class="bold bg-dark">
+                <td class="center" colspan="3">Total</td>
+                <td>25000</td>
+                <td>Pcs</td>
+                <td></td>
+                <td>25000</td>
+                <td>Pcs</td>
+                <td>500.00</td>
+            </tr>
+          </table>
+          <br>
+          <h4><u>Terms And Conditions</u></h4>
+            <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                <li>Inventore cupiditate vero dolor eum explicabo incidunt sequi ea.  </li>
+                <li>Tempore a corporis, explicabo alias voluptate itaque </li>
+                <li>deserunt aliquam laboriosam odit accusantium officia?</li>
+                <li>deserunt aliquam laboriosam odit accusantium officia?</li> 
+            </ol>
+
+        <hr>
+        <div class="btn"> <!-- formmethod="post/get" -->
+            <input type="button" value="save" formmethod="get"> 
+            <input type="button" value="save and new" formmethod="get">
+            <input type="button" value="save and send" formmethod="get">
+        </div>
+        </form>
+     </section>
+</main>
+
+<footer>
+    @copy right 2021 <br>bus-web.com
+</footer>
+    
+</body>
+</html>

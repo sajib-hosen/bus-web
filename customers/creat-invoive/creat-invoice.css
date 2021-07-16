@@ -1,0 +1,79 @@
+/* common style 
+---------------- */
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* for invoice containe or main body
+------------------------------------- */
+.main-body{
+    width: 70%;  /* responsive marker  */
+    /* border: 2px dashed red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* for customer name and other info 
+--------------------------------------- */
+.invoice-info{ /* responsive marker  */
+    display: flex;
+    flex-wrap: nowrap; 
+}
+.flex-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mrg{
+    margin: 10px;
+}
+
+/* for table decoration 
+------------------------- */
+table{
+    width: 100%;
+}
+th{
+    background-color: rgb(138, 134, 134);
+    color: white;
+    font-weight: bold;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+.center{
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+.bg-dark{
+    background-color: rgb(126, 121, 121) !important; 
+    color: white;
+}
+/* footer setting
+--------------------- */
+footer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(36, 34, 34, 0.878);
+    color: white;
+    padding: 25px;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+/* button 
+---------- */
+.btn{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+.btn input{
+    background-color: teal;
+    padding: 3px;
+    margin-left: 3px;
+    color: white;
+}

@@ -1,8 +1,14 @@
+/* ----------------------
+    common item setting 
+----------------------- */
 body{
     margin: 0;
     background-color: lightgray;
     font-family: 'Courier New', Courier, monospace;
 }
+
+/* login form container 
+------------------------- */
 .login-container {
     margin-top: 0px;
     display: flex;
@@ -27,16 +33,25 @@ body{
     padding: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.419);
 }
+
+/* emain and password field 
+---------------------------- */
 .login-form input, button {
     margin: 10px;
+    height: 30px;
+    width: 200px;
 }
+
+/* image inside the login form 
+-------------------------------- */
 .login-form img {
     align-items: center;
     position: relative;
     justify-content: center;
 }
 
-/**/
+/* navigation bar setting
+------------------------- */
 .home {
     display: flex;
     justify-content: space-between;
@@ -53,8 +68,8 @@ body{
 }
 
 
-
-/*FOOTER DESIGNE*/
+/* footer setting
+--------------------- */
 footer {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
