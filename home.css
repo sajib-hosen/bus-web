@@ -23,7 +23,6 @@ body {
 
 /*LOGIN SECTION DESIGNE*/
 .sec-stat {
-    border: 1px dotted purple;
     display: flex;
     justify-content: space-between; /* seperate two contain/ vertically*/
     height: 40px;
@@ -34,10 +33,27 @@ body {
     border: 1px dotted royalblue;
     text-align: center;
     color: slateblue;
+    border: none;
+    margin-left: 15px;
+}
+.f-half input{
+    background-color: rgba(221, 217, 217, 0.521);
+    height: 20px;
+    width: 250px;
+    color: white;
 }
 
 .f-half:hover{
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 0px 0px 10px black;
+}
+.s-half i{
+    color:rgba(241, 241, 241, 0.767);
+    font-size: 25px;
+    margin-right: 10px;
+    font-weight: 100;
+}
+.s-half:hover i{
+    color: white;
 }
 
 
