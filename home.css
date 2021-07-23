@@ -65,7 +65,7 @@ nav {
 nav > ul {
     display: flex;
     background-color: rgb(87, 87, 87);
-    box-shadow: 10px 20px 10px black;
+    box-shadow: 5px 5px 5px black;
     overflow: hidden;
     padding: 0px; /**/
 }
