@@ -21,7 +21,7 @@
 </header>
 <main class="main-body">
     <section class=>
-        <h1><i class="fas fa-file-invoice-dollar"></i> Invoice</h1>
+        <h1 style="font-size: 2.2vw;"><i class="fas fa-file-invoice-dollar"></i> Invoice</h1>
 
         <!-- whole form container 
         ---------------------------- -->
@@ -38,7 +38,7 @@
              <div class="invoice-info">
                  <div class="billing-address text-down-filed mrg">
                      <div class="inpur-label"><label for="billing-address">Billing Address</label></div>
-                     <div class="input-field"> <textarea name="biling-address" id="bill-adds" cols="30" rows="7" placeholder="House #10, ...." required></textarea></div>
+                     <div class="input-field"> <textarea name="biling-address" id="bill-adds" cols="20" rows="5" placeholder="House #10, ...." required></textarea></div>
                  </div>
  
  
@@ -94,8 +94,8 @@
             <tr>
               <th>Serial No</th>
               <th>Item</th>
-              <th>Item Description<br><span style="font-size: 11px;">(to be shown on the Invoice)</span></th>
-              <th colspan="2">Prder Quantioty</th>
+              <th>Item Description<br><span style="font-size: 1 vw;">(to be shown on the Invoice)</span></th>
+              <th colspan="2">Order Quantioty</th>
               <th>Unit Price</th>
               <th colspan="2">Bill Quantity</th>
               <th>Item Value</th>
@@ -103,72 +103,158 @@
 
             <!-- table data  -->
             <tr>
-              <td>01</td>
-              <td>Woven Label</td>
-              <td>Woven Label (PO BV008556)</td>
-              <td>5000</td>
-              <td>Pcs</td>
-              <td>0.02</td>
-              <td>5000</td>
-              <td>Pcs</td>
-              <td>100.00</td>
+                <td><input type="number" class="tbl-form" name="sl-no" placeholder="01" required></td>
+
+                <td>
+                    <input list="item-list" name="item-list" class="tbl-form" placeholder="Woven" required>
+                    <datalist id="item-list">
+                        <option value="Woven"></option>
+                        <option value="Poly"></option>
+                        <option value="Paper"></option>
+                        <option value="Sticker"></option>
+                        <option value="Others"></option>
+                    </datalist>
+                </td>
+
+                <td><input type="text" class="tbl-form" name="item-details" placeholder="Woven Label (PO-Rjkh67875)" required></td>
+
+                <td><input type="number" name="or-qty" id="order-qty" class="tbl-form" placeholder="5000" required></td>
+
+                <td><input list="unit-in" name="unit-in" class="tbl-form" placeholder="Pcs" required>
+                    <datalist id="unit-in">
+                        <option value="Pcs"></option>
+                        <option value="Yds"></option>
+                        <option value="Ltr"></option>
+                    </datalist></td>
+
+                <td><input type="number" name="rate" id="unit-price" class="tbl-form" placeholder="$ 0.90" required></td>
+
+                <td><input type="number" name="bil-qty" id="bill-qty" class="tbl-form" placeholder="5000" required></td>
+
+                <td><input list="unit-in" name="unit-in" class="tbl-form" placeholder="Pcs" required>
+                    <datalist id="unit-in">
+                        <option value="Pcs"></option>
+                        <option value="Yds"></option>
+                        <option value="Ltr"></option>
+                    </datalist></td>
+
+                <td><input type="number" name="total-value" id="ttl-value" class="tbl-form" placeholder=" $ 4,500.00" required></td>
+            </tr>
+            <tr>
+                <td><input type="number" class="tbl-form" name="sl-no" required></td>
+
+                <td>
+                    <input list="item-list" name="item-list" class="tbl-form" required>
+                    <datalist id="item-list">
+                        <option value="Woven"></option>
+                        <option value="Poly"></option>
+                        <option value="Paper"></option>
+                        <option value="Sticker"></option>
+                        <option value="Others"></option>
+                    </datalist>
+                </td>
+
+                <td><input type="text" class="tbl-form" name="item-details" required></td>
+
+                <td><input type="number" name="or-qty" id="order-qty" class="tbl-form" required></td>
+
+                <td><input list="unit-in" name="unit-in" class="tbl-form" required>
+                    <datalist id="unit-in">
+                        <option value="Pcs"></option>
+                        <option value="Yds"></option>
+                        <option value="Ltr"></option>
+                    </datalist></td>
+
+                <td><input type="number" name="rate" id="unit-price" class="tbl-form" required></td>
+
+                <td><input type="number" name="bil-qty" id="bill-qty" class="tbl-form" required></td>
+
+                <td><input list="unit-in" name="unit-in" class="tbl-form" required>
+                    <datalist id="unit-in">
+                        <option value="Pcs"></option>
+                        <option value="Yds"></option>
+                        <option value="Ltr"></option>
+                    </datalist></td>
+
+                <td><input type="number" name="total-value" id="ttl-value" class="tbl-form" required></td>
+            </tr>
+            <tr>
+                <td><input type="number" class="tbl-form" name="sl-no" required></td>
+
+                <td>
+                    <input list="item-list" name="item-list" class="tbl-form" required>
+                    <datalist id="item-list">
+                        <option value="Woven"></option>
+                        <option value="Poly"></option>
+                        <option value="Paper"></option>
+                        <option value="Sticker"></option>
+                        <option value="Others"></option>
+                    </datalist>
+                </td>
+
+                <td><input type="text" class="tbl-form" name="item-details" required></td>
+
+                <td><input type="number" name="or-qty" id="order-qty" class="tbl-form" required></td>
+
+                <td><input list="unit-in" name="unit-in" class="tbl-form" required>
+                    <datalist id="unit-in">
+                        <option value="Pcs"></option>
+                        <option value="Yds"></option>
+                        <option value="Ltr"></option>
+                    </datalist></td>
+
+                <td><input type="number" name="rate" id="unit-price" class="tbl-form" required></td>
+
+                <td><input type="number" name="bil-qty" id="bill-qty" class="tbl-form" required></td>
+
+                <td><input list="unit-in" name="unit-in" class="tbl-form" required>
+                    <datalist id="unit-in">
+                        <option value="Pcs"></option>
+                        <option value="Yds"></option>
+                        <option value="Ltr"></option>
+                    </datalist></td>
+
+                <td><input type="number" name="total-value" id="ttl-value" class="tbl-form" required></td>
+            </tr>
+            <tr>
+                <td><input type="number" class="tbl-form" name="sl-no" required></td>
+
+                <td>
+                    <input list="item-list" name="item-list" class="tbl-form" required>
+                    <datalist id="item-list">
+                        <option value="Woven"></option>
+                        <option value="Poly"></option>
+                        <option value="Paper"></option>
+                        <option value="Sticker"></option>
+                        <option value="Others"></option>
+                    </datalist>
+                </td>
+
+                <td><input type="text" class="tbl-form" name="item-details" required></td>
+
+                <td><input type="number" name="or-qty" id="order-qty" class="tbl-form" required></td>
+
+                <td><input list="unit-in" name="unit-in" class="tbl-form" required>
+                    <datalist id="unit-in">
+                        <option value="Pcs"></option>
+                        <option value="Yds"></option>
+                        <option value="Ltr"></option>
+                    </datalist></td>
+
+                <td><input type="number" name="rate" id="unit-price" class="tbl-form" required></td>
+
+                <td><input type="number" name="bil-qty" id="bill-qty" class="tbl-form" required></td>
+
+                <td><input list="unit-in" name="unit-in" class="tbl-form" required>
+                    <datalist id="unit-in">
+                        <option value="Pcs"></option>
+                        <option value="Yds"></option>
+                        <option value="Ltr"></option>
+                    </datalist></td>
+
+                <td><input type="number" name="total-value" id="ttl-value" class="tbl-form" required></td>
             </tr>
 
-            <tr>
-                <td>02</td>
-                <td>Woven Label</td>
-                <td>Woven Label (PO BV008556)</td>
-                <td>5000</td>
-                <td>Pcs</td>
-                <td>0.02</td>
-                <td>5000</td>
-                <td>Pcs</td>
-                <td>100.00</td>
-            </tr>
-            <tr>
-                <td>03</td>
-                <td>Woven Label</td>
-                <td>Woven Label (PO BV008556)</td>
-                <td>5000</td>
-                <td>Pcs</td>
-                <td>0.02</td>
-                <td>5000</td>
-                <td>Pcs</td>
-                <td>100.00</td>
-            </tr>
-            <tr>
-                <td>04 </td>
-                <td>Woven Label</td>
-                <td>Woven Label (PO BV008556)</td>
-                <td>5000</td>
-                <td>Pcs</td>
-                <td>0.02</td>
-                <td>5000</td>
-                <td>Pcs</td>
-                <td>100.00</td>
-            </tr>
-            <tr>
-                <td>05</td>
-                <td>Woven Label</td>
-                <td>Woven Label (PO BV008556)</td>
-                <td>5000</td>
-                <td>Pcs</td>
-                <td>0.02</td>
-                <td>5000</td>
-                <td>Pcs</td>
-                <td>100.00</td>
-            </tr>
-            <tr>
-                <td>+</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
             <!-- for total value  -->
             <tr class="bold bg-dark">
                 <td class="center" colspan="3">Total</td>
@@ -190,19 +276,19 @@
                 <li>deserunt aliquam laboriosam odit accusantium officia?</li> 
             </ol>
 
-        <hr>
-        <div class="btn"> <!-- formmethod="post/get" -->
-            <input type="button" value="save" formmethod="get"> 
-            <input type="button" value="save and new" formmethod="get">
-            <input type="button" value="save and send" formmethod="get">
-            <input type="button" value="print" formmethod="get">
-            <input type="button" value="cancle" formmethod="get">
-            <input type="button" value="submit" formmethod="get">
-        </div>
+         <hr>
+            <div class="btn"> <!-- formmethod="post/get" -->
+                <input type="button" value="save" formmethod="get"> 
+                <input type="button" value="save and new" formmethod="get">
+                <input type="button" value="save and send" formmethod="get">
+                <input type="button" value="print" formmethod="get">
+                <input type="button" value="cancle" formmethod="get">
+                <input type="button" value="submit" formmethod="get">
+            </div>
         </form>
      </section>
 </main>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <footer>
     @copy right 2021 <br>bus-web.com
 </footer>

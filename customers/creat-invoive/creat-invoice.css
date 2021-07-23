@@ -77,3 +77,35 @@ footer {
     margin-left: 3px;
     color: white;
 }
+
+/* ------------------------
+    for table input field 
+-------------------------- */
+.tbl-form{
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    width: 100%;
+    word-wrap: normal;
+}
+tr input {
+    text-align: center;
+}
+form * {
+    font-size: 1.3vw;
+}   
+
+
+/* for responsive */
+@media only screen and (max-width: 414px){
+    .main-body{
+        width:100%;
+        border-style: none;
+    }
+}
+@media only screen and (min-width:415px) and ( max-width:768px) {
+    .main-body{
+        width:90%;
+    }
+}
