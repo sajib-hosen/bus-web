@@ -10,7 +10,7 @@ body {
 ------------------------------------- */
 .main-body{
     width: 70%;  /* responsive marker  */
-    border: 2px dashed red;
+    border: 1px dashed red;
     margin-left: auto;
     margin-right: auto;
 }
@@ -53,6 +53,8 @@ tr:nth-child(odd) {
     background-color: rgb(126, 121, 121) !important; 
     color: white;
 }
+
+
 /* footer setting
 --------------------- */
 footer {
@@ -73,7 +75,7 @@ footer {
 }
 .btn input{
     background-color: teal;
-    padding: 5px 10px;
+    padding: 3px 10px;
     margin-left: 3px;
     color: white;
 }
@@ -94,8 +96,10 @@ tr input {
 }
 form * {
     font-size: 1.3vw;
-}   
-
+} 
+.btn input{
+    border-style: none;
+}
 
 /* for responsive */
 @media only screen and (max-width: 414px){

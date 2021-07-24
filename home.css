@@ -1,4 +1,5 @@
 
+
 body {
     background-color: #d4d3d3;
     margin: 0;
@@ -25,7 +26,7 @@ body {
 }
 
 
-/*LOGIN SECTION DESIGNE*/
+/*TOP BAR*/
 .sec-stat {
     display: flex;
     justify-content: space-between; /* seperate two contain/ vertically*/
@@ -34,6 +35,7 @@ body {
     align-items: center; /*centralize horaizantaly*/
     width: 100%;
 }
+/* SEARCH BAR INSIDE TOP BAR  */
 .search-bar {
     border: 1px dotted royalblue;
     text-align: center;
@@ -57,22 +59,40 @@ body {
     transition: color 1s;
 }
 
-
-
 .search-bar input:hover{
     box-shadow: 0px 0px 10px black;
 }
-.s-half i{
+
+/* ACCOUNT SECTION INSIDE TOP BAR  */
+.account i{
     color: rgb(58, 5, 58);
     font-size: 25px;
     margin-right: 10px;
     font-weight: 100;
 }
-.s-half:hover i{
+.account i:hover{
     color: white;
     transition: color 1.5s;
 }
-
+.account a{
+    text-decoration: none;
+    color: rgb(58, 5, 58);
+    padding-right: 20px;
+    font-weight: bold;
+}
+.account ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account a:hover{
+    color: white;
+    font-weight: bold;
+    transition: color 1.5s, font-weight 1.5s;
+}
+.account li{
+    list-style-type: none;
+}
 
 
 
@@ -124,10 +144,11 @@ nav li{
 @media only screen and (max-width: 768px) {
     .nav-ul{display: block;}
     .nav-ul{padding-left: 0;}
-    nav > ul > li:hover > ul {
+    nav > ul > li:hover  > ul {
         margin: 0px 0px 0px 0px;
         position: relative;
     }
+    
 }
 /* END NAV  */
 
