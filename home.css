@@ -43,7 +43,7 @@ body {
 }
 .search-bar input{
     background-color: rgba(221, 217, 217, 0.521);
-    height: 20px;
+    height: 25px;
     width: 250px;
     color: white;
     border-style: none;
@@ -83,7 +83,7 @@ nav a{
 nav a:hover{
     background-color: rgb(29, 39, 39);
     color: white;
-    transition: background-color 0.5s;
+    transition: background-color 1s;
 }
 
 .nav-ul{
@@ -110,9 +110,10 @@ nav li{
 }
 
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 768px) {
     .nav-ul{display: block;}
     .nav-ul{padding-left: 0;}
+    nav > ul > li:hover > ul {margin: 0px 0px 0px 60px;}
 }
 /* END NAV  */
 
