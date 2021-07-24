@@ -1,0 +1,72 @@
+/* --------------------------
+    common items style
+----------------------------  */
+/* * {
+    border: 1px dashed blue;
+} */
+body{
+    margin: 0%;
+    background-color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+main{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px dotted red;
+}
+.sec-box{
+    background-color: rgb(148, 141, 197);
+    font-size: 24px;
+    text-align: center;
+}
+/* ----------------------
+    page layout by grid
+------------------------- */
+.page-layout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3px;
+    /* background-color: darkslateblue; */
+}
+/* header section  */
+.lay-sec-1{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column: span 2;
+}
+
+/* pi and cuatomer information >> okay
+accounts info >> okay  */
+
+/* table section  */
+.lay-sec-4{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column: span 2;
+}
+/* footer section  */
+.lay-sec-7{
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column: span 2;
+}
+/* page layout end  */
+
+
+
+/* ------------------------
+    heading section design 
+--------------------------- */
+
+/* end heading */
+
+/* ------------------------------------
+    pi & customer info section design 
+-------------------------------------- */
+.lay-sec-2 input{
+    border-style: none;
+}
+
+
+/* end PI & Customers  */
