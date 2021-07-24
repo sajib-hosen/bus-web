@@ -124,7 +124,10 @@ nav li{
 @media only screen and (max-width: 768px) {
     .nav-ul{display: block;}
     .nav-ul{padding-left: 0;}
-    nav > ul > li:hover > ul {margin: 0px 0px 0px 60px;}
+    nav > ul > li:hover > ul {
+        margin: 0px 0px 0px 0px;
+        position: relative;
+    }
 }
 /* END NAV  */
 
