@@ -24,22 +24,38 @@ body{
 .login-form {
     border: 2px solid black;
     border-radius: 5px;
-    color: lightyellow;
+    color: rgba(33, 2, 46, 0.973);
     margin: 5px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
-    background-color: rgba(126, 125, 125, 0.398);
+    background-color: rgba(36, 34, 34, 0.398);
     padding: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.419);
+    box-shadow: 10px 10px 15px rgba(12, 11, 11, 0.419);
+}
+
+
+.login-form button:hover{
+    background-color: rgba(76, 7, 104, 0.973);
+    color: white;
+    box-shadow: 0px 0px 15px black;
+    transition: background-color 1.5s, color 1.5s, box-shadow 1.5s;
+}
+.login-form input:hover{
+    box-shadow: 0px 0px 15px black;
+    transition: box-shadow 1.5s;
 }
 
 /* emain and password field 
 ---------------------------- */
-.login-form input, button {
+
+.input-fi {
     margin: 10px;
     height: 30px;
-    width: 200px;
+    width: 206px;
+    border-style: none;
 }
 
 /* image inside the login form 
