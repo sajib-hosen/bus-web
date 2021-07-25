@@ -26,6 +26,17 @@ main{
 
 /* end common style  */
 
+/* -------------------------
+    notice for mobile user 
+--------------------------- */
+.not-mobile{
+    display: none;
+    background-color: yellow;
+    text-align: center;
+}
+
+
+
 /* ----------------------
     header decoration 
 ----------------------- */
@@ -219,6 +230,9 @@ footer {
     }
     .page-layout{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .not-mobile{
+        display: block;
     }
 
 }
