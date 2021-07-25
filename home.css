@@ -46,7 +46,7 @@ body {
 .search-bar input{
     background-color: rgba(238, 237, 237, 0.808);
     height: 20px;
-    width: 250px;
+    width: 20%px;
     color: white;
     border-style: none;
 }

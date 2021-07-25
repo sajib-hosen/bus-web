@@ -13,13 +13,28 @@ main{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
 }
 .sec-box{
     background-color: rgb(148, 141, 197);
     font-size: 24px;
     text-align: center;
 }
+.input-field{
+    border-style: none;
+}
+
+/* end common style  */
+
+/* ----------------------
+    header decoration 
+----------------------- */
+header{
+    background-color: darkcyan;
+}
+/* end header  */
+
+
 /* ----------------------
     page layout by grid
 ------------------------- */
@@ -27,7 +42,8 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3px;
-    /* background-color: darkslateblue; */
+    background-color: rgb(230, 228, 228);
+    padding: 5px;
 }
 /* header section  */
 .lay-sec-1{
@@ -45,28 +61,171 @@ accounts info >> okay  */
     grid-column-start: 1;
     grid-column: span 2;
 }
+
+
 /* footer section  */
 .lay-sec-7{
     grid-row-start: 5;
     grid-column-start: 1;
     grid-column: span 2;
 }
-/* page layout end  */
-
+/* end page layout
+------------------- */
 
 
 /* ------------------------
     heading section design 
 --------------------------- */
 
-/* end heading */
+/* end heading
+-------------- */
 
 /* ------------------------------------
     pi & customer info section design 
 -------------------------------------- */
-.lay-sec-2 input{
+
+
+
+/* end PI & Customers 
+---------------------- */
+
+
+/* -----------------------------
+    table section decoration 
+------------------------------ */
+
+table{
+    width: 100%;
+}
+th{
+    background-color: rgb(138, 134, 134);
+    color: white;
+    font-weight: bold;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+.center{
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+.bg-dark{
+    background-color: rgb(126, 121, 121) !important; 
+    color: white;
+}
+.tbl-form{
+    height: 30px;
+    margin: 0;
+    padding: 0;
     border-style: none;
+    width: 100%;
+    word-wrap: normal;
+}
+tr input {
+    text-align: center;
+}
+form * {
+    font-size: 1.3vw;
+} 
+/* end table
+------------  */
+
+
+/* ---------------
+    note section 
+---------------- */
+.lay-sec-5 textarea{
+    width: 90%;
+    height: 100%;
+    margin-left: 3px;
+}
+/* end note 
+----------- */
+
+
+/* ------------------------------
+    discount and total section 
+------------------------------- */
+.lay-sec-6{
+    text-align: right;
+}
+.lay-sec-6 p{
+    margin-top: 0%;
+    padding: 3px;
+    margin-bottom: 0%;
+}
+.lay-sec-6 input{
+    width: 45%;
+}
+/* end discount and total 
+------------------------- */
+
+
+
+/* ------------------
+    button section 
+------------------- */
+
+.btn{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+.btn input{
+    background-color: teal;
+    padding: 3px 10px;
+    margin-left: 3px;
+    color: white;
+    border-style: none;
+}
+.btn input:hover{
+    background-color: rgb(33, 16, 78);
+    transition: background-color 2s;
+
+}
+/* end button
+-------------  */
+
+/* --------------------
+    footer decoration
+--------------------- */
+footer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(36, 34, 34, 0.878);
+    color: white;
+    padding: 25px;
+    letter-spacing: 3px;
+    font-size: 15px;
 }
 
 
-/* end PI & Customers  */
+
+
+
+
+
+
+/* --------------
+    responsive 
+--------------- */
+@media only screen and (max-width: 320px) {
+    body{margin: 5px;}
+    main{
+        width: 100%;
+        border-style: none;    
+    }
+    .page-layout{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    body{margin: 5px;}
+    main{
+        width: 100%;
+        border-style: none;    
+    }
+}

@@ -21,41 +21,231 @@
     </head>
 <body>
     <header>
-
+        <h1>this is heading</h1>
     </header>
 <main>
     <!-- page layout container  -->
 <div class="page-layout">
 
-    <!-- header section 
-    ---------------- -->
-    <div class="lay-sec-1">
-        <div class="form-heading">
-            <h3><i class="fas fa-money-check-alt"></i> Customers Payments</h3>
+        <!-- header section 
+        ---------------- -->
+        <div class="lay-sec-1">
+            <div class="for-heading">
+                <h3><i class="fas fa-money-check-alt"></i> Customers Payments</h3>
+            </div>
         </div>
-    </div>
-    <!-- end header  -->
-        
-    <!-- pi & customer info section  -->
-    <div class="lay-sec-2">
-        <p>Cuatomer Name: <input type="text" name="cust-name" class="cust-name input-field"></p>
-        <p>Invoice Number: <input type="text" name="inv-num" class="inv-num input-field"></p>
-        <p>Invoice Valur: <input type="text" name="inv-val" class="inv-val input-field"></p>
-        <p>Total Due: <input type="text" name="tot-due" class="tot-due input-field"></p>
-        <p>Print Receipt <input type="radio" name="print-rec" id="print-rec">
-        Send Customer <input type="radio" name="send-cus" id="send-cus"></p>
-    </div>
-    <!-- end pi & customer  -->
-    
-    
-    
-    
-        <div class="lay-sec-3 sec-box">date & Balance info</div>
-        <div class="lay-sec-4 sec-box">table</div>
-        <div class="lay-sec-5 sec-box">total</div>
-        <div class="lay-sec-6 sec-box">something</div>
-        <div class="lay-sec-7 sec-box">footer</div>
+        <!-- end header  -->
+
+        <!-- pi & customer info section
+        ---------------------------  -->
+        <div class="lay-sec-2">
+            <p>Cuatomer Name:<input list="cus-name" name="cus-name" class="cus-name input-field">
+                <datalist id="cus-name">
+                    <option value="Customers which has due balance"></option>
+                    <option value="customer 1"></option>
+                    <option value="customer 2"></option>
+                    <option value="customer 3"></option>
+                    <option value="customer 4"></option>
+                </datalist></p>
+            <p>Invoice Number: <input list="inv-no" name="inv-no" class="inv-noe input-field">
+                <datalist id="inv-no">
+                    <option value="invoice no 1"></option>
+                    <option value="invoice no 2"></option>
+                    <option value="invoice no 3"></option>
+                    <option value="invoice no 4"></option>
+                    <option value="not yet payed"></option>
+                </datalist></p>
+            <p>Invoice Valur: <input type="text" name="inv-val" class="inv-val input-field"></p>
+            <p>Total Due: <input type="text" name="tot-due" class="tot-due input-field"></p>
+            <p>Print Receipt <input type="radio" name="print-rec" id="print-rec">
+            Send Customer <input type="radio" name="send-cus" id="send-cus"></p>
+        </div>
+        <!-- end pi & customer  -->
+
+        <!-- account section
+        ----------------  -->
+        <div class="lay-sec-3">
+            <p>Balance to be added in: <input type="text" name="add-rec" class="add-erc input-field"></p>
+            <p>Received by: <input list="rec-by" name="rec-by" class="rec-by input-field">
+                <datalist id="rec-by">
+                    <option value="L/C at sigth, 90 days draft"></option>
+                    <option value="L/C at sigth, 120 days draft"></option>
+                    <option value="T/T"></option>
+                    <option value="On Cash"></option>
+                    <option value="FDD"></option>
+                </datalist></p>
+                <p>Reference Number: <input type="text" name="refe-no" class="refe-no input-field"></p>
+                <p>Date: <input type="date" name="rec-date" id="rec-date1" class="rec-date input-field"></p>
+        </div>
+        <!-- end account section  -->
+
+
+        <!-- table section 
+        ---------------- -->
+        <div class="lay-sec-4">
+            <table>
+                <!-- table heading  -->
+               <tr>
+                 <th>Serial No</th>
+                 <th>Invoice No</th>
+                 <th>Invoice Date</th>
+                 <th>Invoice Value</th>
+                 <th>Received Value</th>
+                 <th>Total Received</th>
+                 <th>Total Due</th>
+                 <th>Remarks</th>
+               </tr>
+   
+               <!-- table data  -->
+               <tr>
+                   <td><input type="text" class="tbl-form" name="sl-no"></td>
+                   <td>
+                       <input list="invs-no" name="invs-no" class="tbl-form" required>
+                       <datalist id="invs-no">
+                           <option value="Invoice No-1"></option>
+                           <option value="Invoice No-2"></option>
+                           <option value="Invoice No-3"></option>
+                           <option value="Invoice No-4"></option>
+                           <option value="Invoice No-5"></option>
+                       </datalist>
+                    </td>
+                   <td><input type="date" class="tbl-form" name="invs-date" required></td>
+                    <td><input type="number" name="invs-vlue" id="invs-vlue1" class="tbl-form" required></td>
+                   <td><input type="number" name="rec-vlue" id="rec-vlue1" class="tbl-form" required></td>
+                   <td><input type="number" name="ttl-rec" id="ttl-rec1" class="tbl-form" required></td>
+                   <td><input type="number" name="ttl-due" id="ttl-due1" class="tbl-form" required></td>
+                   <td><input type="text" name="remarks" id="remarks1" class="tbl-form"></td>
+               </tr>
+               <tr>
+                   <td><input type="text" class="tbl-form" name="sl-no"></td>
+                   <td>
+                       <input list="invs-no" name="invs-no" class="tbl-form" required>
+                       <datalist id="invs-no">
+                           <option value="Invoice No-1"></option>
+                           <option value="Invoice No-2"></option>
+                           <option value="Invoice No-3"></option>
+                           <option value="Invoice No-4"></option>
+                           <option value="Invoice No-5"></option>
+                       </datalist>
+                    </td>
+                   <td><input type="date" class="tbl-form" name="invs-date" required></td>
+                    <td><input type="number" name="invs-vlue" id="invs-vlue1" class="tbl-form" required></td>
+                   <td><input type="number" name="rec-vlue" id="rec-vlue1" class="tbl-form" required></td>
+                   <td><input type="number" name="ttl-rec" id="ttl-rec1" class="tbl-form" required></td>
+                   <td><input type="number" name="ttl-due" id="ttl-due1" class="tbl-form" required></td>
+                   <td><input type="text" name="remarks" id="remarks1" class="tbl-form"></td>
+               </tr>
+               <tr>
+                   <td><input type="text" class="tbl-form" name="sl-no"></td>
+                   <td>
+                       <input list="invs-no" name="invs-no" class="tbl-form" required>
+                       <datalist id="invs-no">
+                           <option value="Invoice No-1"></option>
+                           <option value="Invoice No-2"></option>
+                           <option value="Invoice No-3"></option>
+                           <option value="Invoice No-4"></option>
+                           <option value="Invoice No-5"></option>
+                       </datalist>
+                    </td>
+                   <td><input type="date" class="tbl-form" name="invs-date" required></td>
+                    <td><input type="number" name="invs-vlue" id="invs-vlue1" class="tbl-form" required></td>
+                   <td><input type="number" name="rec-vlue" id="rec-vlue1" class="tbl-form" required></td>
+                   <td><input type="number" name="ttl-rec" id="ttl-rec1" class="tbl-form" required></td>
+                   <td><input type="number" name="ttl-due" id="ttl-due1" class="tbl-form" required></td>
+                   <td><input type="text" name="remarks" id="remarks1" class="tbl-form"></td>
+               </tr>
+               <tr>
+                   <td><input type="text" class="tbl-form" name="sl-no"></td>
+                   <td>
+                       <input list="invs-no" name="invs-no" class="tbl-form" required>
+                       <datalist id="invs-no">
+                           <option value="Invoice No-1"></option>
+                           <option value="Invoice No-2"></option>
+                           <option value="Invoice No-3"></option>
+                           <option value="Invoice No-4"></option>
+                           <option value="Invoice No-5"></option>
+                       </datalist>
+                    </td>
+                   <td><input type="date" class="tbl-form" name="invs-date" required></td>
+                    <td><input type="number" name="invs-vlue" id="invs-vlue1" class="tbl-form" required></td>
+                   <td><input type="number" name="rec-vlue" id="rec-vlue1" class="tbl-form" required></td>
+                   <td><input type="number" name="ttl-rec" id="ttl-rec1" class="tbl-form" required></td>
+                   <td><input type="number" name="ttl-due" id="ttl-due1" class="tbl-form" required></td>
+                   <td><input type="text" name="remarks" id="remarks1" class="tbl-form"></td>
+               </tr>
+               <tr>
+                   <td><input type="text" class="tbl-form" name="sl-no"></td>
+                   <td>
+                       <input list="invs-no" name="invs-no" class="tbl-form" required>
+                       <datalist id="invs-no">
+                           <option value="Invoice No-1"></option>
+                           <option value="Invoice No-2"></option>
+                           <option value="Invoice No-3"></option>
+                           <option value="Invoice No-4"></option>
+                           <option value="Invoice No-5"></option>
+                       </datalist>
+                    </td>
+                   <td><input type="date" class="tbl-form" name="invs-date" required></td>
+                    <td><input type="number" name="invs-vlue" id="invs-vlue1" class="tbl-form" required></td>
+                   <td><input type="number" name="rec-vlue" id="rec-vlue1" class="tbl-form" required></td>
+                   <td><input type="number" name="ttl-rec" id="ttl-rec1" class="tbl-form" required></td>
+                   <td><input type="number" name="ttl-due" id="ttl-due1" class="tbl-form" required></td>
+                   <td><input type="text" name="remarks" id="remarks1" class="tbl-form"></td>
+               </tr>
+   
+               <!-- for total value  -->
+               <tr class="bold bg-dark">
+                   <td class="center" colspan="3">Total</td>
+                   <td>25000</td>
+                   <td>Pcs</td>
+                   <td></td>
+                   <td>25000</td>
+                   <td>500.00</td>
+               </tr>
+             </table>
+        </div>
+        <!-- end table section  -->
+
+
+        <!-- note section
+        -------------  -->
+        <div class="lay-sec-5">
+            <textarea name="biling-address" id="bill-adds" class="input-field" rows="5" placeholder="if you like to add notes...." required></textarea>
+        </div>
+        <!-- end note  -->
+
+
+        <!-- ----------------------------- 
+            discount and total section 
+        ------------------------------ -->
+        <div class="lay-sec-6">
+            <p>Transport Bill: <input type="number" name="tra-bill" id="tra-bill" class="input-field"></p>
+            <p>Discount: <input type="number" name="discount" id="discount1" class="input-field"></p>
+            <p>Net Received: <input type="number" name="n-rec" id="n-rec" class="input-field"></p>
+        </div>
+
+        <!-- end discount and total
+        ----------------------  -->
+
+        <!-- button section  -->
+        <div class="lay-sec-7">
+            <br><br><br><hr>
+            <div class="btn"> <!-- formmethod="post/get" -->
+                <input type="button" value="save" formmethod="get"> 
+                <input type="button" value="save and new" formmethod="get">
+                <input type="button" value="save and send" formmethod="get">
+                <input type="button" value="print" formmethod="get">
+                <input type="button" value="cancle" formmethod="get">
+                <input type="button" value="submit" formmethod="get">
+            </div>
+        </div>
+        <!-- end button section  -->
     </div>
 </main>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- footer section  -->
+<footer>
+    @copy right 2021 <br>bus-web.com
+</footer>
 </body>
 </html>

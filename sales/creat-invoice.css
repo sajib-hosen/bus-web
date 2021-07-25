@@ -53,6 +53,22 @@ tr:nth-child(odd) {
     background-color: rgb(126, 121, 121) !important; 
     color: white;
 }
+/* for table input field 
+-------------------------- */
+.tbl-form{
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    width: 100%;
+    word-wrap: normal;
+}
+tr input {
+    text-align: center;
+}
+form * {
+    font-size: 1.3vw;
+} 
 /* footer setting
 --------------------- */
 footer {
@@ -79,23 +95,7 @@ footer {
     border-style: none;
 }
 
-/* ------------------------
-    for table input field 
--------------------------- */
-.tbl-form{
-    height: 30px;
-    margin: 0;
-    padding: 0;
-    border-style: none;
-    width: 100%;
-    word-wrap: normal;
-}
-tr input {
-    text-align: center;
-}
-form * {
-    font-size: 1.3vw;
-}   
+  
 
 
 /* for responsive */
