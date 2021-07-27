@@ -42,19 +42,25 @@ body {
     color: slateblue;
     border: none;
     margin-left: 10px;
+    width: 20px;
+}
+.search-bar p{
+    display: flex;
+    align-items: center;
+    width: 50%;
 }
 .search-bar input{
     background-color: rgba(238, 237, 237, 0.808);
     height: 20px;
-    width: 20%px;
+    width: 140px;
     color: white;
     border-style: none;
 }
 .search-bar i{
-    color: rgb(58, 5, 58);
+    color: rgb(32, 2, 32);
     margin-left: 10px;
 }
-.search-bar i:hover{
+.search-bar:hover i{
     color: white;
     transition: color 1s;
 }

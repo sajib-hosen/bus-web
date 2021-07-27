@@ -83,9 +83,14 @@ body{
     padding-right: 15px;
 }
 .s-sec i{
-    color: white;
+    color: rgb(137, 200, 216);
     font-size: 20px;
 }
+.s-sec i:hover{
+    color: white;
+    transition: color 1.5s;
+}
+
 
 /* footer setting
 --------------------- */
