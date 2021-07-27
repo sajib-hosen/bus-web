@@ -14,12 +14,14 @@
     <script src="https://kit.fontawesome.com/2ecc583568.js" crossorigin="anonymous"></script>
     <!-- style sheet added from bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- style/css over righe file -->
+    <link rel="stylesheet" href="my-css.css">
     <title>bus-web.com</title>
 </head>
 <body>
 <header>
 <!-- navigation bar  -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mb-5">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo image"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +39,9 @@
             <a class="nav-link" href="#">Backpack</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="tailwindcss\index.html" target="_block">Dress</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Subscrib</a>
           </li>
         </ul>
@@ -45,7 +50,7 @@
 </nav>
 
 <!-- carousel/image slider start -->
-<section class="container">
+<section class="container mt-5">
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -237,6 +242,16 @@
     </div>
   </section>
 
+  <!-- subscrib section  -->
+  <section class="container border rounded-3 mt-5 d-flex justify-content-center">
+    <div class="d-flex align-items-center flex-column m-5">
+      <h1>LET'S STAY IN TOUCH</h1>
+      <p>Get updates on sales specials and more</p>
+      <div class="border d-flex align-items-center  bg-info rounded-3">
+        <p class="mb-0 w-90"><input class="w-90"  type="email" name="email"><span class="p-3">send</span></p>
+      </div>
+    </div>
+  </section>
 
 
 </main>

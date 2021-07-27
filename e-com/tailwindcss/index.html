@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind explore</title>
+    <!-- tailwind css  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- fontawsome  -->
+    <script src="https://kit.fontawesome.com/631b67cd03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header section  -->
+<header class="bg-red-50 pb-20 p-4">
+    <nav class="lg:flex justify-between items-center">
+        <!-- logo site -->
+        <div class="flex items-center ml-6">
+            <img src="https://image.flaticon.com/icons/png/512/2333/2333149.png" alt="penguin logo" class="w-12">
+            <p class="text-2xl text-yellow-400 font-bold ml-2"><span class="text-green-500">Penguin</span> Fashion</p>
+        </div>
+        <!-- navigationbar site  -->
+        <div class="mr-6">
+            <ul class="md:flex">
+            <li class="font-bold"><a class="hover:text-blue-100 hover:bg-gray-600 p-4" href="#">Home</a></li>
+            <li class="font-bold"><a class="hover:text-blue-100 hover:bg-gray-600 p-4" href="#product">Product</a></li>
+            <li class="font-bold"><a class="hover:text-blue-100 hover:bg-gray-600 p-4" href="#information">Aboun us</a></li>
+            <li class="font-bold"><a class="hover:text-blue-100 hover:bg-gray-600 p-4" href="#">Contuct us</a></li>
+        </ul>
+        </div>
+
+    </nav>
+    <!-- tahline  -->
+    <div class="md:flex justify-around items-center rounded">
+        <section class="rounded">
+            <h1 class="text-5xl uppercase font-bold"><span class="text-yellow-400">be the penguins</span><br> of winter</h1>
+            <p class="leading-loose">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><br>
+            <a class="bg-gradient-to-r leading-loose from-purple-400 via-pink-500 to-red-500  p-3 my-2 rounded" href="#buynow"><svg xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg> Buy Now</a>
+        </section>
+        <!-- tagline image  -->
+        <section>
+            <img src="penguin-fashion-main/images/model.png" alt="model pori moni khala">
+        </section>
+    </div>
+</header>
+<!-- main section  -->
+<main>
+<!--product strata of items  -->
+<section id="product" class="container lg:w-4/5 m-auto mt-16">
+    <h1 class="text-5xl mb-3">Woman Jacket</h1>
+   <div class="container mt-10 grid lg:grid-cols-3">
+        <!-- for single item  -->
+        <div class="shadow-lg rounded-lg p-3 m-3">
+            <div class="item-image bg-gray-200 rounded-lg">
+                <img src="penguin-fashion-main/images/jacket-1.png" class="h-80 p-3 m-auto" alt="woman Jacket">
+            </div>
+            <div class="item-description p-3">
+                <h1 class="text-2xl  font-bold">Yellow Coat Jacket </h1>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+                <div class="price-and-button flex justify-between p-3">
+                    <h1 class="text-5xl font-bold text-yellow-400">$420</h1>
+                    <button><a class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500  p-3 my-2 rounded" href="#buynow"> Buy Now</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- for single item  -->
+        <div class="shadow-lg rounded-lg p-3 m-3">
+            <div class="item-image bg-gray-200 rounded-lg">
+                <img src="penguin-fashion-main/images/jacket-2.png" class="h-80 p-3 m-auto" alt="woman Jacket">
+            </div>
+            <div class="item-description p-3">
+                <h1 class="text-2xl  font-bold">Ladies Jacket</h1>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+                <div class="price-and-button flex justify-between p-3">
+                    <h1 class="text-5xl font-bold text-yellow-400">$420</h1>
+                    <button><a class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500  p-3 my-2 rounded" href="#buynow"> Buy Now</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- for single item  -->
+        <div class="shadow-lg rounded-lg p-3 m-3">
+            <div class="item-image bg-gray-200 rounded-lg">
+                <img src="penguin-fashion-main/images/jacket-3.png" class="h-80 p-3 m-auto" alt="woman Jacket">
+            </div>
+            <div class="item-description p-3">
+                <h1 class="text-2xl font-bold">Woman Leather Jacket </h1>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+                <div class="price-and-button flex justify-between p-3">
+                    <h1 class="text-5xl font-bold text-yellow-400">$420</h1>
+                    <button><a class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500  p-3 my-2 rounded" href="#buynow"> Buy Now</a></button>
+                </div>
+            </div>
+        </div>
+   </div>
+
+</section>
+<!--product strata of items  -->
+<section class="container lg:w-4/5 m-auto mt-16">
+    <h1 class="text-5xl mb-3">Man Jacket</h1>
+   <div class="container mt-10 grid lg:grid-cols-3">
+        <!-- for single item  -->
+        <div class="shadow-lg rounded-lg p-3 m-3">
+            <div class="item-image bg-gray-200 rounded-lg">
+                <img src="penguin-fashion-main/images/jacket-4.png" class="h-80 p-3 m-auto" alt="woman Jacket">
+            </div>
+            <div class="item-description p-3">
+                <h1 class="text-2xl  font-bold">Snowboard Jacket Mens</h1>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+                <div class="price-and-button flex justify-between p-3">
+                    <h1 class="text-5xl font-bold text-yellow-400">$420</h1>
+                    <button><a class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500  p-3 my-2 rounded" href="#buynow"> Buy Now</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- for single item  -->
+        <div class="shadow-lg rounded-lg p-3 m-3">
+            <div class="item-image bg-gray-200 rounded-lg">
+                <img src="penguin-fashion-main/images/jacket-5.png" class="h-80 p-3 m-auto" alt="woman Jacket">
+            </div>
+            <div class="item-description p-3">
+                <h1 class="text-2xl  font-bold">Man Leather Jackets</h1>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+                <div class="price-and-button flex justify-between p-3">
+                    <h1 class="text-5xl font-bold text-yellow-400">$420</h1>
+                    <button><a class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500  p-3 my-2 rounded" href="#buynow"> Buy Now</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- for single item  -->
+        <div class="shadow-lg rounded-lg p-3 m-3">
+            <div class="item-image bg-gray-200 rounded-lg">
+                <img src="penguin-fashion-main/images/jacket-6.png" class="h-80 p-3 m-auto" alt="woman Jacket">
+            </div>
+            <div class="item-description p-3">
+                <h1 class="text-2xl font-bold">Yellow Coat Jacket </h1>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+                <div class="price-and-button flex justify-between p-3">
+                    <h1 class="text-5xl font-bold text-yellow-400">$420</h1>
+                    <button><a class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500  p-3 my-2 rounded" href="#buynow"> Buy Now</a></button>
+                </div>
+            </div>
+        </div>
+   </div>
+</section>
+
+<!-- information section  -->
+<section id="information" class="information lg:w-4/5 m-auto mt-16 p-3 lg:grid grid-cols-2 gap-4">
+    <!-- BIG IMAGE  -->
+    <div class="big-image lg:order-2 row-span-3 lg:flex items-end">
+        <img src="penguin-fashion-main/images/shopping.png" alt="shopping">
+    </div>
+    <!-- find the Perfect fit  -->
+    <div class="shadow-xl rounded mt-2 lg:order-1 lg:flex">
+        <div><img src="penguin-fashion-main/icons/image 12.png" class="h-24 w-24 p-3 m-auto"  alt="shopping"></div>
+        <div>
+            <h1 class="text-2xl font-bold text-center lg:text-left">Find the Perfect Fit</h1>
+            <p class="text-center lg:text-left">Everybody is different, which is why we offer styles for every body.</p>
+        </div>
+    </div>
+    <!-- free Exchanges -->
+    <div class="shadow-xl rounded mt-2 lg:order-3 lg:flex">
+        <div><img src="penguin-fashion-main/icons/image 13.png" class="h-24 w-24 p-3 m-auto"  alt="shopping"></div>
+        <div>
+            <h1 class="text-2xl font-bold text-center lg:text-left">Free Exchanges</h1>
+            <p class="text-center lg:text-left">One of the many reasons you can shop
+                with peace of mind.</p>
+        </div>
+    </div>
+    <!-- Contact Our Seller -->
+    <div class="shadow-xl rounded mt-2 lg:order-4 lg:flex">
+        <div><img src="penguin-fashion-main/icons/image 14.png" class="h-24 w-24 p-3 m-auto"  alt="shopping"></div>
+        <div>
+            <h1 class="text-2xl font-bold text-center lg:text-left">Contact Our Seller</h1>
+            <p class="text-center lg:text-left">They are here to help you. That's quite 
+                literally what we pay them for.</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+</main>
+<br><br><br><br><br><br><br><br><br><br><br>
+<!-- footer section  -->
+ <footer>
+
+ </footer>    
+</html>
