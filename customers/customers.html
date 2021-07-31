@@ -1,27 +1,706 @@
 <!DOCTYPE html>
-<html lang="en">
+<html leng="en"> <!--"en" "en-US" leng declearing the language of this doc-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="customers.css">
-    <title>Document</title>
+
+<title>To learn HTML</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="podma.jpg">
+
+<link rel="stylesheet" href="forcss.css">
+
+<script async="true" type="text/javascript" src="C:\Users\user\Desktop\Programming Hero\Coding\HTML & CSS\forjs.js"></script>
+<!--
+//other attributes-- 
+//1, async- (script is executed asynchronously (only for external scripts))
+//2, defer- (script is executed when the page has finished parsing (only for external scripts))
+//3, crossorigin- anonymous/use-credentials (Sets the mode of the request to an HTTP CORS Request)
+//4, integrity- filehash (Allows a browser to check the fetched script to ensure that the code is never loaded if the source has been manipulated)
+//5, nomodule- True/False (Specifies that the script should not be executed in browsers supporting ES2015 modules)
+//6, referrerpolicy-  no-referrer/no-referrer-when-downgrade/origin/origin-when-cross-origin/same-origin/strict-origin/strict-origin-when-cross-origin/unsafe-url
+//  (Specifies which referrer information to send when fetching a script)
+-->
+
+<meta charset="UTF-8"> <!--Define the character set used-->
+<meta name="keywords" content="HTML, CSS, JavaScript"><!--Define keywords for search engines:-->
+<meta name="description" content="Free Web tutorials"><!--Define a description of your web page-->
+<meta name="author" content="John Doe"><!--Define the author of a page-->
+<!--<meta http-equiv="refresh" content="30"><!--Refresh document every 30 seconds-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Setting the viewport to make your website look good on all devices, initial-scale=1.0 part sets the initial zoom level-->
+
+<style>
+body {
+	background-color: SlateGray;
+}
+</style>
+
+
 </head>
+
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="my-home.html">My Home</a></li>
-                <li><a href="your-home.html">Your Home
-                    <ul class="dropdown">
-                        <li><a href="your-home.html">link- 1</a></li>
-                        <li><a href="your-home.html">link- 2</a></li>
-                        <li><a href="your-home.html">link- 3</a></li>
-                    </ul>
-                </a></li>
-            </ul>
-        </nav>
-    </header>
+
+<h1 id="h001"><i>In the name of</i> Allah</h1>
+<p id="pid001">This is paragraph</p>
+
+<!--<a> tag for adding link & target attribute=_self/_blank/_parent/_top-->
+<a href="https://www.w3schools.com">This is a link</a>
+<a href="https://www.w3schools.com" target="_blank">link with target _blank</a>
+<a href="https://www.w3schools.com" target="_self">link with target _self</a>
+<a href="https://www.w3schools.com" target="_parent">link with target_parent</a>
+<a href="https://www.w3schools.com" target="_top">link with target _top</a>
+
+<a href="mailto:sajib.201h@gmail.com"target="_self">mail to sajib</a>
+
+<br><!--button as link-->
+<button onclick="document.location='https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwi4usHN_KrxAhXNwjgGHVarBY8QPQgI'">what do you like to know?</button>
+
+<br>
+
+<!--<img, source, alterntve, hegth, weigth> tag for add img-->
+<a href="https://en.wikipedia.org/wiki/Al-Aqsa_Mosque" target="_blank">
+<img src="Jerusalem-3.jpg" title="Al-Aqsa Mosque" alt="Maszid al-aqsa" width="438 px" height="200 px">
+</a>
+
+<!--<br> tag for line breack & title attribute-->
+<p title="title attribute gives some extra info whene your curser moves oner paragraph">this is a paragraph and <br>i would like to </p>
+
+<!--style attribute-->
+<p style="color: red;">this would be red "TITLE"</p>
+
+<!--<hr> Horizontal rules/line line can be seen-->
+<hr>
+<!--<pre> preformatted text-->
+<pre>The text inside a ...pre... element is displayed in a 
+fixed-width font (usually Courier), and 
+it preserves both       spaces 
+and line breaks:</pre>
+
+<!--
+<b> - Bold text
+<strong> - Important text
+<i> OR <cite> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+-->
+
+<!--<abbr> Abbreviations, <q> Quotations-->
+<p>The <abbr title="World Health Organization">WHO</abbr> was
+ founded in <q>1948</q>.</p>
+
+ <!--<blockquote> Quotations-->
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<hr>
+ <!--<bdo> for Bi-Directional Override, dir(direction)=rtl (right to left-->
+<bdo dir="rtl">This text will be written from right to left</bdo>
+
+<h2 id="h002">Hello World</h2> <hr>
+
+<!--<img>and attributes-->
+<h3 class="partName">Image</h3>
+
+<img id="imgid001" src="Italian landscape.jpg" alt="Italian landscape painting">
+
+<!--for use <map>-->
+<img src="workplace.jpg" alt="img" usemap="#areas">
+<map name="areas">
+	<area shape="rect" coords="34,44,270,350" alt="computer" href="https://www.hp.com/us-en/shop/tech-takes/10-essential-computer-maintenance-tips" title="Computer" target="_blank">
+	<area shape="rect" coords="290,172,333,250" alt="mobile phn" href="https://www.apple.com/iphone-11/specs/" title="Mobile Phone" target="_blank">
+	<area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.google.com/search?q=coffee&sxsrf=ALeKk03jznAHPIXS3hA-Bwq0N-xMVZZ9Cw:1624373915223&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjGusuxwKvxAhV663MBHQwyBXQQ_AUoAXoECAIQAw&biw=575&bih=544" title="Coffee" target="_blank">
+</map>
+
+<img src="frenchfood4.jpg" alt="imgs" usemap="#areas1">
+<map name="areas1">
+	<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" title="Croissant" href="https://www.w3schools.com/html/croissant.htm"  target="_blank" onclick="myfunction()">
+</map>
+
+<div class="paragraph">
+<p>Al-Aqsa Mosque<br>ٱلْمَسْجِد ٱلْأَقْصَىٰ‎</p>
+</div>
+
+<!--<picture> and attributs-https://www.w3schools.com/html/html_images_picture.asp-->
+<br>
+
+<!--<table> and it's attributes-->
+<h3 class="partName">Table</h3>
+<table id="t001">
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th colspan="2">Contuct Number</th>
+		<th>Addres</th>
+	</tr>
+	<tr>
+		<td>Sajib</td>
+		<td>Hosen</td>
+		<td>+880 1788 587821</td>
+		<td>+880 1400 882121</td>
+		<td>Uttara, Dhaka</td>
+	</tr>
+	<tr>
+		<td>Sajib</td>
+		<td>Hosen</td>
+		<td>+880 1788 587821</td>
+		<td>+880 1400 882121</td>
+		<td>Uttara, Dhaka</td>
+	</tr>
+		<td>Sajib</td>
+		<td>Hosen</td>
+		<td>+880 1788 587821</td>
+		<td>+880 1400 882121</td>
+		<td>Uttara, Dhaka</td>
+	</tr>
+</table>
+<br>
+
+<table id="t002">
+<caption>Heading Of The Table</caption>
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+
+<div style="background-color: #E0FFFF;">
+<!--List and it's attribute-->
+<h3 class="partName">Ordered & Unordered List</h3>
+<hr>
+<ul> <!--unordered list-->
+	<li>Coffee</li> <!--listitem-->
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+
+<ol> <!--ordered list-->
+	<li>Coffee</li> <!--listitem-->
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+
+<dl> <!--description list, it has no icon-->
+	<dt>Coffee</dt> <!--description list term-->
+	<dd>- black hot drink</dd>  <!--descripted data-->
+</dl>
+
+<ul id="l001"> <!--unordered list-->
+	<li>Coffee</li> <!--listitem-->
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+
+
+<ul id="l002">
+  <li class="litem"><a href="#home">Home</a></li>
+  <li class="litem"><a href="#news">News</a></li>
+  <li class="litem"><a href="#contact">Contact</a></li>
+  <li class="litem"><a href="#about">About</a></li>
+</ul>
+
+<ol type="I"> <!--unordered list, type="1/A/a/I/i" or start="50"-->
+	<li>Coffee</li> <!--listitem-->
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+</div>
+
+
+<h3 class="partName">Block and Inline Elements</h3>
+
+<div style="border: 1px solid black;">this <span style="color:blue; font-weight:bold;">is</span> div</div>
+
+<div>https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_js</div>
+
+<h3 class="partName">Using JS functions</h3>
+
+<p class="city">10</p>
+<p class="city">20</p>
+<p class="city">30</p>
+<button onclick="remove()">click to romeve the city name</button>
+
+<p id="5568">Here will be printed</p>
+<button onclick="hello()">Print Hello</button>
+
+<!--iframe-->
+<h3 class="partName">iframe</h3>
+<iframe src="Italian landscape.jpg" height="400px" width="600px" style="border:none;">hi</iframe>
+
+<!--2nd Example-->
+<iframe src="Italian landscape.jpg" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+<p><a href="Jerusalem-3.jpg" target="iframe_a">Click on to load the link on iframe</a></p>
+
+
+<h3 class="partName">HTML JavaScript</h3>
+
+<p id="p004"><button onclick="time()">TIME</button></p>
+
+<p id="p005">javascript can change the style.</p>
+<button type="button" onclick="unction()">chnge style</button>
+<hr>
+<img id="img001" src="Italian landscape.jpg" width="100" height="180">
+<br><button type="button" onclick="cimg(1)">italy img</button>
+<button type="button" onclick="cimg(0)">bd img</button>
+
+
+<h3 class="partName">HTML Forms</h3>
+
+<div style="background-color:white; padding: 15px;">
+<h2>HTML Form, type="text"</h2>
+
+<!--for attribute, value= any text, equal to id tag-->
+<!--type attribute, value= "button/checkbox/color/date/datetime-local/email/file/hidden/image/month/number/password/radio/range/reset/search/submit/tel/text/time/url/week"-->
+<!--https://www.w3schools.com/html/html_form_input_types.asp-->
+https://www.w3schools.com/html/html_form_attributes.asp
+
+<!--name attribute, value= "it works like a variable/it contain the given value by the user"-->
+<!--value attribute, value= any input set by coder/built-->
+<!--id attribute, value= "any unic value"-->
+<!--target attribute, value= "_blank/_self/_parent/_top/*framename"-->
+<!--method attribute, value= "get/post"-->
+<!--autocomplete attribute, value= "on/off"-->
+<!-- ovalidate attribute is a boolean attribute,  it specifies that the form-data (input) should not be validated when submitted-->
+<!--readonly attributedoes not allow to edit the contain-->
+
+<form action="/action_page.php" autocomplete="on"> <!--The action attribute defines the action to be performed when the form is submitted-->
+	<label for="firstName">First Name</label> <!---->
+	<input type="text" name="firstName" id="fname" value="" placeholder="Mohamad">
+	<br> <br>
+	<label for="lastName">Last Name</label>
+	<input type="text" name="lirstName" id="lname" value="Sajib" placeholder="">
+	<br>
+	<input type="submit" value="Submit"	
+</form>
+<br> <br>
+
+<h2>HTML Form, type="radio"</h2>
+<form action="">
+	<input type="radio" id="html" name="fav_language" value="HTML">
+	<label for="html">HTML</label><br>
+	
+	<input type="radio" id="css" name="fav_language" value="CSS">
+	<label for="css">CSS</label><br>
+	
+	<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+	<label for="javascript">JavaScript</label>
+
+</form>
+
+<br> <br>
+<p>HTML Form, type="checkbox"</p>
+<form action="">
+	<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+	<label for="vehicle1"> I have a bike</label><br>
+	
+	<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+	<label for="vehicle2"> I have a car</label><br>
+	
+	<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+	<label for="vehicle3"> I have a boat</label>
+</form>
+
+<br><br>
+<h2>HTML Form, range</h2>
+<!--type="range"-->
+<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+<br><br>
+<!--type="date"-->
+<h2>HTML Form, type="date"</h2>
+<form action="/action_page.php">
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+<!--type="datetime-local"-->
+<h2>HTML Form, type="datetime-local"</h2>
+<form action="/action_page.php">
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+<!--type="color"-->
+<h2>HTML Form, type="color"</h2>
+<form>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</form>
+
+<br><br>
+<!--type="email"-->
+<h2>HTML Form, type="email"</h2>
+<form>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter mail">
+</form>
+
+<br><br>
+<!--type="file"-->
+<h2>HTML Form, type="file"</h2>
+<form>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+</form>
+
+<br><br>
+<!--type="text"-->
+<h2>HTML Form, type="text"</h2>
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" maxlength="10" size="12"><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+<!--type="submit"-->
+<h2>HTML Form, type="month"</h2>
+<form action="/action_page.php">
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+<!--type="number"-->
+<h2>HTML Form, type="number"</h2>
+<form>
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+
+<br><br>
+<!--type="range"-->
+<h2>HTML Form, type="range"</h2>
+<form action="/action_page.php" method="get">
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+<!--type="search"-->
+<h2>HTML Form, type="search</h2>
+<form>
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch" placeholder="search here">
+</form>
+
+<br><br>
+<!--type="tel"-->
+<h2>HTML Form, type="tel"</h2>
+<form action="/action_page.php">
+  <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+  <small>Format: 123-45-678</small><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+<!--type="url"-->
+<h2>HTML Form, type="url"</h2>
+<form action="/action_page.php" method="post">
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage" placeholder="Enter URL">
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+<!--type="tme"-->
+<h2>HTML Form, type="time"</h2>
+<form action="/action_page.php">
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+<!--ype="week"-->
+<h2>HTML Form, type="week"</h2>
+<form action="/action_page.php">
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+<h2>HTML Form, type="Password"</h2>
+<form action="____.php" method="post">
+	<label for="pas">Password:</label>
+	<input type="password" name="pas" id="pas001" placeholder="Enter Password">
+	<input type="submit" value="submit">
+</form>
+
+
+
+<br> <br>
+<h2>Others input Elements</h2>
+<!--The HTML <form> element can contain one or more of the following form elements:
+
+	<input>
+	<label>
+	<select>
+	<textarea>
+	<button>
+	<fieldset>
+	<legend>
+	<datalist>
+	<output>
+	<option>
+	<optgroup>
+-->
+<br> <br>
+
+<!--<select>-->
+<h2>select</h2>
+<form action="/action_page.php">
+
+  <label for="cars">Choose a car:</label>
+  
+	<select id="cars" name="cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab..........</option>
+		<option value="fiat" selected>Fiat</option>
+		<option value="audi">Audi</option>
+	</select>
+  <input type="submit">
+</form>
+	
+<!--<option>-->
+<h2>option</h2>
+<form action="/action_page.php">
+  <label for="cars">Choose a cAr:</label>
+  
+  <select id="cars" name="cars" size="2">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <input type="submit">
+</form>
+	
+<!--multiple-->
+<h2>multiple</h2>
+	<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="4" multiple> <!--Use the multiple attribute to allow the user to select more than one value.-->
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <input type="submit">
+</form>
+	
+	
+<!--<textarea>-->	
+<h2>textarea</h2>
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">style="width:200px; height:600px;/// The cat was playing in the garden.</textarea>
+  <br>
+  <input type="submit">
+</form>
+
+<!--<button>-->
+<h2>button</h2>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>	
+
+<br><br>
+<!--<fieldset> element is used to group related data in a form-->
+<!--<legend> element defines a caption for the <fieldset> element. -->
+<h2>fieldset</h2>
+<form action="/action_page.php">
+  <fieldset>
+    <legend style="background-color:pink; border:2px solid black;">Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>	
+	
+<br><br>
+<!--<datalist>-->
+<h2>datalist</h2>
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<!--attributes of form-->
+<!--name="ctext", the name attribute contain the value for process.-->
+<!--value="text" spacify the initial value for an input fild,--->
+<!--readonly, attribute spacifies that an input field is fead read-only.--->
+<!--disabled, attribute spacifies that an input field should be desable. --->
+<!---size="20" attribute spacifies the visible width . in charecters of an input field.-->
+<!---maxlength="4" attribute spacifies the maximum number of charecters allowed in an input field.-->
+<!--min="" & max="" attributes spacify the minimum and maximum values for an input.
+(number, range,date,datetime-local,month, time and week)--->
+<!---multiple, attribute specifies that the user is allowed ti enter more than one value in an input field.-->
+<!--placeholder="text" the attribute specifies a short hint that descrides the expected value of an input field.--->
+<!--required, the attribute specifies that an input must be filled oit befor submitting the form.
+ it generally works with types: passwords, search,url,tel, email, number,date pickers, checkbox, radio, and file.--->
+<!--step="number" the attribute specifies the legal number intervals for ia input field.--->
+<!--autofocus, attribut specifies that an input field should automatically get fous whe the page loads,it makes the form dark.--->
+<!--height="" & widt="" attributes specify the height and width of an <input tylpe="image"> elements.
+Tip: always specify both the height and width attributes for image. if height and width are set, the space required for the image is reserved.--->
+<!--list, attribute refer to a <detalist> element that contains lpre-defined option for an <input> element.--->
+<!--autocomplete="on/off" Autocomplete allows the browser to predict the value. 
+When a user starts to type in a field, the browser should display options to fill in the field,
+ based on earlier typed values. types: text, search, url, tel, email, password, datepickers, range, and color.--->
+<!--formation="location of the file that will process the information." it works like: action="" attribute.-->
+<!--formenctype="" ???--->
+<!--method="get/post" ??--->
+<!--formmethod="post/get" The input formmethod attribute defines the HTTP method for sending form-data to the action URL.
+Note: This attribute overrides the method attribute of the <form> element.
+https://www.w3schools.com/html/html_form_attributes_form.asp-->
+<!--formtarget="" ??-->
+<!--formnovalidate="" ??-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+
+
+
+
+<br>
+<form action="">
+	<label for="country_code">Country Code: </label>
+	<input type="text" name="country_code" title="Three Letter Country Code" pattern="[A-Za-z]{3}">
+</form>
+<p><strong>Note:</strong> The pattern attribute is not supported in Sadari 10 or earlier. So it is not working here.</p>
+
+
+</div>
+
+
+
+
+
+
+<p id="d001"></p>
+
+<br>
+
+<div style="background-color:#BFC9CA;">
+<h2>HTML Graphics</h2>
+<h2>Canvad // Gradient</h2>
+<!--It shows four elements: a red rectangle,
+ a gradient rectangle, a multicolo rectangle, 
+ and a multicolor text.-->
+ 
+<canvas id="cnvs001">This canvas for rectangle.</canvas><br><br>
+<canvas id="cnvs002">This is canvas for line.</canvas><br><br>
+<canvas id="cnvs003">This is canvas for Circle.</canvas><br><br>
+<canvas id="cnvs004">This is canvas for gradient.</canvas><br><br>
+
+</div>
+
+
+
+<div style="background-color: #F0F8FF;">
+<h2>HTML Multimedia<h2>
+<br>
+<video width="500" height="300" controls>
+	<source="D:\VIDEOS\Bangla VIDEOS\Al Habib (The Loved One).mp4" type="video/mp4">
+	<source="D:\VIDEOS\Bangla VIDEOS\Al Habib (The Loved One).ogg" type="video/ogg">
+</video>
+
+
+<br>
+</div>
+
+
+
+
+
+<div id="divfordom">
+<h2>JavaScript HTNL DOM Methods</h2>
+
+<!--getElementById & TagName-->
+<p id="dom001"></p>
+<p id="dom002">this is content of paragraph.</p>
+<h5>this is content of h5[0]</h5>
+<h5></h5>
+<p id="dom003"></p>
+
+<!--getElementByClassName-->
+<p class="intro">Hello World!</p>
+<p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+<p id="demo01"></p>
+
+
+
+</div>
+
+
+<br>
+<br>
+<br>
+
+<?php
+// This is PHP
+echo "<p>Hi this is PHP</p>";
+
+
+function testfile(){
+print "<p>This is function</p>";
+}
+?>
+
+testfile();
 
 
 
@@ -33,8 +712,35 @@
 
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
+
+
+
+<script async crossorigin="" defer="" integrity="" nomodule="" referrerpolicy="" src="" type="text/javascript">
+
+//other attributes-- 
+//1, async- (script is executed asynchronously (only for external scripts))
+//2, defer- (script is executed when the page has finished parsing (only for external scripts))
+//3, crossorigin- anonymous/use-credentials (Sets the mode of the request to an HTTP CORS Request)
+//4, integrity- filehash (Allows a browser to check the fetched script to ensure that the code is never loaded if the source has been manipulated)
+//5, nomodule- True/False (Specifies that the script should not be executed in browsers supporting ES2015 modules)
+//6, referrerpolicy-  no-referrer/no-referrer-when-downgrade/origin/origin-when-cross-origin/same-origin/strict-origin/strict-origin-when-cross-origin/unsafe-url
+//  (Specifies which referrer information to send when fetching a script)
+
+</script>
 
 </body>
+
 </html>
